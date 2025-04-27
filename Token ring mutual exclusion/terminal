@@ -1,0 +1,44 @@
+Steps to Run:
+Create the Java Files:
+
+Create two separate Java files on your system:
+
+MachineA.java
+
+MachineB.java
+
+Compile the Java Files: Open a terminal in the directory where your Java files are located, and run the following commands to compile both files.
+
+bash
+Copy
+Edit
+javac MachineA.java
+javac MachineB.java
+This will generate MachineA.class and MachineB.class files in the same directory.
+
+Run the Server (MachineA):
+
+Start the MachineA program first, as it is the server that will wait for the token.
+
+Open a terminal window and run:
+
+bash
+Copy
+Edit
+java MachineA
+This will start the server and wait for an incoming connection. It will print out messages like "Received token" and "Releasing token" when the token is received and sent back.
+
+Run the Client (MachineB):
+
+Open another terminal window and run the MachineB program:
+
+bash
+Copy
+Edit
+java MachineB
+This will start Machine B and simulate it getting the token, entering the critical section, and passing the token to Machine A.
+
+Explanation:
+MachineA.java is the server that listens for the token and releases it after holding it for 10 seconds.
+
+MachineB.java is the client that initially has the token and enters the critical section. It then passes the token back after the critical section is finished.
