@@ -1,0 +1,8 @@
+python3 berkeley_server.py
+python3 berkeley_client.py
+Server IP: In the client script, replace the server_ip variable with the actual IP address of the machine running the server. If running on the same machine, use '127.0.0.1' or 'localhost'.
+
+python
+Copy
+Edit
+server_ip = '127.0.0.1'  # or 'localhost'
