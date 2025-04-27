@@ -78,3 +78,4 @@ java server
 java client
 history -c
 history -w
+Clear-History for bash
