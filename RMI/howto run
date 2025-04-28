@@ -1,0 +1,39 @@
+Good question!  
+When it says:
+
+```bash
+export MPJ_HOME=/path/to/mpj
+```
+
+you need to replace `/path/to/mpj` with **the actual location where you unpacked MPJ Express**.
+
+For example:  
+- If you unpacked it into your home folder `/home/yourname/mpj-v0_44/`, then:
+
+```bash
+export MPJ_HOME=/home/yourname/mpj-v0_44
+```
+
+Or if you unpacked it somewhere else, use that path.
+
+---
+
+Quick way to find the path:  
+- Go into the folder where you extracted it.
+- Type `pwd` (print working directory) in terminal.
+- That printed output is your `/path/to/mpj`.
+
+---
+
+**Example full setup:**
+
+```bash
+cd ~/Downloads
+tar -xvzf mpj-v0_44.tar.gz
+export MPJ_HOME=/home/yourname/Downloads/mpj-v0_44
+export PATH=$MPJ_HOME/bin:$PATH
+```
+
+---
+
+Want me to show you a 30-second script you could use to automate it too? 🔥
